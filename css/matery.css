@@ -241,7 +241,7 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    background-image: linear-gradient(to right, #1E90FF 0%, #1d6ec0 100%);
 }
 
 .text-color {
@@ -302,6 +302,7 @@ header .brand-logo .logo-span {
 /*修改顶部 logo 的文字垂直对齐为 top，避免默认 middle 看起来偏下*/
 header .brand-logo .waves-effect {
     vertical-align: top;
+    position: relative;
 }
 
 header .button-collapse i {
@@ -380,7 +381,7 @@ header .side-nav .social-link {
     line-height: 45px;
     font-size: 1rem;
     color: #fff;
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
     background-color: transparent;
     border-radius: 30px;
     box-shadow: none;
@@ -568,20 +569,25 @@ header .go-back i {
 }
 
 .bg-cover .container {
-    position: relative;
+    position: absolute;
+    top: 25%;
     color: #fff;
     z-index: 2;
+    left: 0;
+    right: 0;
 }
 
 .bg-cover .title {
     font-size: 4rem;
+    font-weight: 700;
     line-height: 1.2em;
     margin-bottom: 20px;
     position: relative;
 }
 
 .bg-cover .description {
-    font-weight: 300;
+    /* font-weight: 300; */
+    padding: 5px;
     font-size: 1.25rem;
     line-height: 1.4em;
     color: #eee;
@@ -593,7 +599,7 @@ header .go-back i {
     font-weight: 400;
 }
 
-@-webkit-keyframes rainbow {
+/* @-webkit-keyframes rainbow {
 
     0%,
     100% {
@@ -683,7 +689,7 @@ header .go-back i {
         background: -moz-linear-gradient(135deg, rgba(233, 30, 99, 0.75) 0%, rgba(233, 30, 99, 0.65) 100%);
         background: -webkit-linear-gradient(135deg, rgba(2233, 30, 99, 0.75) 0%, rgba(233, 30, 99, 0.65) 100%);
     }
-}
+} */
 
 .index-card {
     margin-top: -10px;
